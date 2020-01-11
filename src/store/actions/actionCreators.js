@@ -12,9 +12,6 @@ export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_ERROR = 'LOGIN_ERROR';
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 
-export const EDIT_TODO_LIST = 'EDIT_TODO_LIST';
-export const REMOVE_TODO_LIST = 'REMOVE_TODO_LIST';
-
 
 
 // THESE CREATORS MAKE ACTIONS ASSOCIATED WITH USER ACCOUNTS
@@ -36,27 +33,3 @@ export function logoutSuccess() {
 }
 
 // THESE CREATORS MAKE ACTIONS FOR ASYNCHRONOUS TODO LIST UPDATES
-export function createTodoList(todoList) {
-    return {
-        type: 'CREATE_TODO_LIST',
-        todoList
-    }
-}
-export function createTodoListError(error) {
-    return {
-        type: 'CREATE_TODO_LIST_ERROR',
-        error
-    }
-}
-
-//
-export function editTodoList() {
-    return { type: 'EDIT_TODO_LIST' }
-}
-
-export function removeTodoList(todoList) {
-    return {
-        type: 'REMOVE_TODO_LIST',
-        todoList
-    }
-}

@@ -45,17 +45,4 @@ export const editListHandler = (todoList) => (dispatch, getState, { getFirestore
     items: todoList.items,
     time: new Date(),
   })
-  .then(() => {
-      dispatch(actionCreators.editTodoList);
-  });
-};
-
-
-export const removeListHandler = (todoList) => (dispatch, getState, { getFirestore }) => {
-  const firestore = getFirestore();
-
-  firestore.collection("todoLists").doc(todoList.id).delete()
-  .then(() => {
-      dispatch(actionCreators.removeTodoList);
-  });
 };

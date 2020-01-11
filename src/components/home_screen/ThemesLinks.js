@@ -5,24 +5,18 @@ import { compose } from 'redux';
 
 import { firestoreConnect } from 'react-redux-firebase';
 
-import { editListHandler, removeListHandler } from '../../store/database/asynchHandler'
-import TodoListCard from './TodoListCard';
+import { editListHandler } from '../../store/database/asynchHandler'
+import ThemeCard from './ThemeCard';
 
-class TodoListLinks extends React.Component {
+class ThemesLinks extends React.Component {
     render() {
-        const todoLists = this.props.todoLists;
+        const themes = this.props.themes;
 
-        if(todoLists){
-            console.log("Sorting: ", todoLists)
-            todoLists.sort((a ,b) => (a.time < b.time) ? 1:-1);
-        }
-
-        console.log(todoLists);
         return (
             <div className="todo-lists section">
-                {todoLists && todoLists.map(todoList => (
+                {themes && themes.map(todoList => (
                     <Link to={'/todoList/' + todoList.id} key={todoList.id} onClick={this.updateTime.bind(this, todoList)}>
-                        <TodoListCard todoList={todoList} />
+                        <ThemeCard todoList={todoList} />
                     </Link>
                 ))}
             </div>
@@ -37,20 +31,19 @@ class TodoListLinks extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        todoLists: state.firestore.ordered.todoLists,
+        themes: state.firestore.ordered.themes,
         auth: state.firebase.auth,
     };
 };
 
 const mapDispatchToProps = dispatch => ({
     updateList: todoList => dispatch(editListHandler(todoList)),
-    removeList: todoList => dispatch(removeListHandler(todoList)),
   });
   
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   firestoreConnect([
-    { collection: 'todoLists' },
+    { collection: 'themes' },
   ]),
-)(TodoListLinks);
+)(ThemesLinks);
