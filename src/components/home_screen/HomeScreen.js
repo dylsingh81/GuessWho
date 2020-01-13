@@ -17,22 +17,6 @@ class HomeScreen extends Component {
         };
     }
 
-    
-    handleNewList = () =>
-    {
-        const fireStore = getFirestore();
-        fireStore.collection('todoLists').add({
-                    name: "Unknown",
-                    owner: "Unknown",
-                    items:[],
-                    time: new Date(),
-            })
-            .then((docRef) => {
-                    this.setState({redirect: true, redirectID: docRef.id});
-                }
-            )
-    }
-
     render() {
         if (!this.props.auth.uid) {
             return <Redirect to="/login" />;
@@ -42,6 +26,7 @@ class HomeScreen extends Component {
             <div className="home_screen_container">
                 <div className="home-prompt row">
                     <span>Click on the theme you want to play!</span>
+                    <ThemesLinks/>
                 </div>
             </div>
         );

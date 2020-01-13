@@ -14,18 +14,13 @@ class ThemesLinks extends React.Component {
 
         return (
             <div className="todo-lists section">
-                {themes && themes.map(todoList => (
-                    <Link to={'/todoList/' + todoList.id} key={todoList.id} onClick={this.updateTime.bind(this, todoList)}>
-                        <ThemeCard todoList={todoList} />
+                {themes && themes.map( (theme, id) => (
+                    <Link to={'/theme/' + id} key={id}>
+                        <ThemeCard theme={theme} />
                     </Link>
                 ))}
             </div>
         );
-    }
-
-    updateTime = (todoList, e) =>{
-        this.props.updateList(todoList);
-
     }
 }
 
@@ -37,7 +32,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    updateList: todoList => dispatch(editListHandler(todoList)),
+    updateList: theme => dispatch(editListHandler(theme)),
   });
   
 

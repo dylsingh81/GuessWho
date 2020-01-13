@@ -9,6 +9,7 @@ import RegisterScreen from './components/register_screen/RegisterScreen.js';
 import LoginScreen from './components/login_screen/LoginScreen.js';
 import HomeScreen from './components/home_screen/HomeScreen.js';
 import DatabaseTester from './test/DatabaseTester'
+import ThemeScreen from './components/theme_screen/ThemeScreen.js'
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
               <Route path="/databaseTester" component={DatabaseTester} />
               <Route path="/register" component={RegisterScreen} />
               <Route path="/login" component={LoginScreen} />
+              <Route path="/theme/:themeId" component={ThemeScreen} />
               <Route path="/:any" component={HomeScreen} />
             </Switch>
           </div>

@@ -20,3 +20,126 @@ body {
 .home-prompt {
   text-align: center;
 }
+
+
+
+
+.a{color: #E7484F}
+.b{color: #F68B1D}
+.c{color: #FCED00}
+.d{color: #009E4F}
+.e{color: #00AAC3}
+.f{color:  #732982}
+
+
+.container{
+  margin-top: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+.custom-candidate-btn:focus{
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #707070 -50%, #FCFCFC 110.00000000000001%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #707070 -50%, #FCFCFC 110.00000000000001%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #707070 -50%, #FCFCFC 110.00000000000001%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(-.5, #707070), color-stop(1.1, #FCFCFC));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #707070 -50%, #FCFCFC 110.00000000000001%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #707070 -50%, #FCFCFC 110.00000000000001%);
+}
+
+.rainbow{
+  background-color: #343A40;
+  border-radius: 4px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  
+}
+
+.rainbow-1:hover{
+   background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 49%, rgb(0, 0, 0) 80%, rgb(255, 255, 255) 100%);
+   animation:slidebg 5s linear infinite;
+}
+
+.rainbow-2:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow-3:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow-4:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+.rainbow-5:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #E7484F 16.65%,
+      #F68B1D 16.65%,
+      #F68B1D 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #00AAC3 66.6%,
+      #00AAC3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #E7484F 100%
+     
+     
+     
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.follow{
+  margin-top: 40px;
+}
+
+.follow a{
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
