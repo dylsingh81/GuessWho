@@ -6,6 +6,8 @@ import { Redirect } from 'react-router-dom';
 
 import { loginHandler } from '../../store/database/asynchHandler'
 
+import title from '../../images/title.png'
+
 class LoginScreen extends Component {
   state = {
     email: '',
@@ -44,9 +46,9 @@ class LoginScreen extends Component {
     }
 
     return (
-      <div className="container">
+      <div className="">
         <div className="row">
-          <form onSubmit={this.handleSubmit} className="col s4 white">
+          <form onSubmit={this.handleSubmit} className="col s4 login-box">
             <h5 className="grey-text text-darken-3">Login</h5>
             <div className="input-field">
               <label htmlFor="email">Email</label>
@@ -61,10 +63,9 @@ class LoginScreen extends Component {
               {authError ? <div className="red-text center"><p>{authError}</p></div> : null}
             </div>
           </form>
-
           <div className="col s8 banner">
-            @todo<br />
-            List Maker
+            <br></br><br></br>
+            <img src={title}/>
           </div>
         </div>
       </div>

@@ -13,11 +13,13 @@ class ThemesLinks extends React.Component {
         const themes = this.props.themes;
 
         return (
-            <div className="todo-lists section">
+            <div className="row">
                 {themes && themes.map( (theme, id) => (
-                    <Link to={'/theme/' + id} key={id}>
-                        <ThemeCard theme={theme} />
-                    </Link>
+                    <div className = "col">
+                        <Link to={'/theme/' + id} key={id}>
+                            <ThemeCard theme={theme} />
+                        </Link>
+                    </div>
                 ))}
             </div>
         );

@@ -23,6 +23,7 @@ class DatabaseTester extends React.Component {
         roster.themes.forEach(theme => {
             fireStore.collection('themes').add({
                     name: theme.name,
+                    icon: theme.icon,
                     items: theme.items,
                 }).then(() => {
                     console.log("DATABASE RESET");

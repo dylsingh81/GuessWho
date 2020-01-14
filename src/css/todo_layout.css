@@ -51,6 +51,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
 
 
 .home_screen_container {
+  position: relative;
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
@@ -70,6 +71,6 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
   width: 85%;
 }
 
-.no-margin-bottom {
-  margin-bottom:0px !important
+.no-margin-top {
+  margin-top: 0px !important
 }

@@ -5,6 +5,7 @@ import { compose } from 'redux';
 import { firebaseConnect } from 'react-redux-firebase';
 import LoggedInLinks from './LoggedInLinks';
 import LoggedOutLinks from './LoggedOutLinks';
+import title from '../../images/title.png'
 
 class Navbar extends React.Component {
 
@@ -13,9 +14,12 @@ class Navbar extends React.Component {
     const links = auth.uid ? <LoggedInLinks profile={profile} /> : <LoggedOutLinks />;
 
     return (
-      <nav className="nav-wrapper grey darken-3">
-        <div className="container">
-          <Link to="/" className="brand-logo">GuessWho?</Link>
+      <nav className="nav-wrapper nav-style">
+        <div className="container no-margin-top">
+          <Link to="/" className="brand-logo">
+            <img src={title} height="50px" width="190px" className = "navImg"/>
+          </Link>
+          
           {links}
         </div>
       </nav>

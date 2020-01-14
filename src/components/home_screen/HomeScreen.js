@@ -25,9 +25,10 @@ class HomeScreen extends Component {
         return (
             <div className="home_screen_container">
                 <div className="home-prompt row">
-                    <span>Click on the theme you want to play!</span>
+                    <div className="home-text">Click on the theme you want to play!</div>
                     <ThemesLinks/>
                 </div>
+                Under Construction... more to come!
             </div>
         );
     }

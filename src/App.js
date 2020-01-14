@@ -8,7 +8,7 @@ import Navbar from './components/navbar/Navbar.js';
 import RegisterScreen from './components/register_screen/RegisterScreen.js';
 import LoginScreen from './components/login_screen/LoginScreen.js';
 import HomeScreen from './components/home_screen/HomeScreen.js';
-import DatabaseTester from './test/DatabaseTester'
+import DatabaseTester from './Database/DatabaseTester'
 import ThemeScreen from './components/theme_screen/ThemeScreen.js'
 
 class App extends Component {
