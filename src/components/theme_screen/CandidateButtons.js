@@ -7,10 +7,10 @@ class CandidateButtons extends React.Component {
         const items = theme.items;
         return (
             <div>
-                {items && items.map( (item, id) => (
-                        <div className = "col">
-                            <CandidateButton item={item} key={id}></CandidateButton>
-                            </div>
+                {items && items.map((item, id) => (
+                    <div className="col s2 margin-button">
+                        <CandidateButton item={item} key={id}></CandidateButton>
+                    </div>
                 ))}
             </div>
         );
