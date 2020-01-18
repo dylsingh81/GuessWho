@@ -9,7 +9,7 @@ class CandidateButtons extends React.Component {
             <div>
                 {items && items.map((item, id) => (
                     <div className="col s2 margin-button">
-                        <CandidateButton item={item} key={id}></CandidateButton>
+                        <CandidateButton item={item} key={id} theme={theme}></CandidateButton>
                     </div>
                 ))}
             </div>

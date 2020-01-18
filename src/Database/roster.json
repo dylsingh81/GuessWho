@@ -8,152 +8,152 @@
                 {
                     "key:": 0,
                     "name": "Bloo",
-                    "image": ""
+                    "image": "Bloo.png"
                 },
                 {
                     "key": 1,
                     "name": "Mac",
-                    "image": ""
+                    "image": "Mac.png"
                 },
                 {
                     "key": 2,
                     "name": "Numbuh One",
-                    "image": ""
+                    "image": "Numbuh_1.png"
                 },
                 {
                     "key": 3,
                     "name": "Numbuh Two",
-                    "image": ""
+                    "image": "Numbuh_2.png"
                 },
                 {
                     "key": 4,
                     "name": "Numbuh Three",
-                    "image": ""
+                    "image": "Numbuh_3.png"
                 },
                 {
                     "key": 5,
                     "name": "Ash",
-                    "image": ""
+                    "image": "ash.png"
                 },
                 {
                     "key": 6,
                     "name": "Brock",
-                    "image": ""
+                    "image": "brock.png"
                 },
                 {
                     "key": 7,
                     "name": "Shaggy",
-                    "image": ""
+                    "image": "Shaggy.png"
                 },
                 {
                     "key": 8,
                     "name": "Scooby",
-                    "image": ""
+                    "image": "Scooby.png"
                 },
                 {
                     "key": 9,
                     "name": "Ben Tennyson",
-                    "image": ""
+                    "image": "Ben_Tennyson.png"
                 },
                 {
                     "key": 10,
                     "name": "Grandpa Max",
-                    "image": ""
+                    "image": "Grandpa_Max.png"
                 },
                 {
                     "key": 11,
                     "name": "Lazlo",
-                    "image": ""
+                    "image": "Lazlo.png"
                 },
                 {
                     "key": 12,
                     "name": "Scoutmaster Lumpus",
-                    "image": ""
+                    "image": "Scoutmaster_Lumpus.png"
                 },
                 {
                     "key": 13,
                     "name": "Flapjack",
-                    "image": ""
+                    "image": "Flapjack.png"
                 },
                 {
                     "key": 14,
                     "name": "Captain K'Nuckles",
-                    "image": ""
+                    "image": "Captain_K'Nuckles.png"
                 },
                 {
                     "key": 15,
                     "name": "Bubbie",
-                    "image": ""
+                    "image": "Bubbie.png"
                 },
                 {
                     "key": 16,
                     "name": "Billy",
-                    "image": ""
+                    "image": "Billy.gif"
                 },
                 {
                     "key": 17,
                     "name": "Mandy",
-                    "image": ""
+                    "image": "Mandy.png"
                 },
                 {
                     "key": 18,
                     "name": "Grim",
-                    "image": ""
+                    "image": "Grim.png"
                 },
                 {
                     "key": 19,
                     "name": "Johnny Test",
-                    "image": ""
+                    "image": "Johnny_Test.png"
                 },
                 {
                     "key": 20,
                     "name": "Dukey",
-                    "image": ""
+                    "image": "Dukey.png"
                 },
                 {
                     "key": 21,
                     "name": "Courage",
-                    "image": ""
+                    "image": "Courage.png"
                 },
                 {
                     "key": 22,
                     "name": "Dexter",
-                    "image": ""
+                    "image": "Dexter.png"
                 },
                 {
                     "key": 23,
                     "name": "Johnny Bravo",
-                    "image": ""
+                    "image": "Johnny_Bravo.gif"
                 },
                 {
                     "key": 24,
                     "name": "Ed",
-                    "image": ""
+                    "image": "Ed.png"
                 },
                 {
                     "key": 25,
                     "name": "Edd",
-                    "image": ""
+                    "image": "Edd.png"
                 },
                 {
                     "key": 26,
                     "name": "Eddy",
-                    "image": ""
+                    "image": "Eddy.png"
                 },
                 {
                     "key": 27,
                     "name": "Samurai Jack",
-                    "image": ""
+                    "image": "Samurai_Jack.png"
                 },
                 {
                     "key": 28,
                     "name": "Chowder",
-                    "image": ""
+                    "image": "Chowder.png"
                 },
                 {
                     "key": 29,
                     "name": "Snitzel",
-                    "image": ""
+                    "image": "Shnitzel.png"
                 }          
             ]
         },
@@ -162,21 +162,6 @@
             "name": "New Cartoon Network",
             "icon": "icon.png",
             "items": [
-                {
-                    "key:": 0,
-                    "name": "BUBBY",
-                    "image": ""
-                },
-                {
-                    "key": 1,
-                    "name": "BUBBY",
-                    "image": ""
-                },
-                {
-                    "key": 2,
-                    "name": "BUBBY",
-                    "image": ""
-                }
             ]
         }
     ]

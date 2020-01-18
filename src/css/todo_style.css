@@ -110,29 +110,11 @@ hr.line-one:before { /* Not really supposed to work, but does */
   display: inline-block;
 }
 
-.card-theme {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.287);
-  transition: 0.3s;
 
-  width: 100px; 
-  height: 100px; 
-  border: 3px solid;
-  border-image: radial-gradient(white, black) 1;
-  border-radius: 5px;
-  background-image: linear-gradient(rgb(83, 83, 83), #c8c7c7);
-  overflow: hidden;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card-theme:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 /* Add some padding inside the card container */
 .container-card-theme {
-  padding: 2px 16px;
-  height: 100%;
+
   width: 100%;
 }
 
@@ -141,12 +123,27 @@ hr.line-one:before { /* Not really supposed to work, but does */
 }
 
 .your-text{
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 
+.img {
+  max-width:100px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+  padding: 2px;
+}
 
+.item-card{
+  height: 160px;
+  width: 150px;
+  border: 2px solid black;
+}
 
+.x-btn{
+  background-color: rgb(133, 0, 0);
+}
 
 
 
@@ -196,12 +193,11 @@ hr.line-one:before { /* Not really supposed to work, but does */
   border-radius: 4px;  
   color: #fff;
   cursor: pointer;
-  padding: 8px 16px;
   
 }
 
 .rainbow-1:hover{
-   background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 49%, rgb(0, 0, 0) 80%, rgb(255, 255, 255) 100%);
+   background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(85, 84, 84) 49%, rgb(70, 70, 70) 80%, rgb(116, 116, 116) 100%);
    animation:slidebg 5s linear infinite;
 }
 
